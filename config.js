@@ -1,0 +1,1 @@
+export const jwtPass="32$1%("

@@ -1,0 +1,42 @@
+Voting app
+what?
+
+
+
+-------------------------------------
+1. user sign-in sing-up
+2.see the list of candidate
+3.vote of one candidate,after voting user cant vote
+4.there is a route which show  the list of candidate and their live vote count sorted by their votes count
+5. user dat must contain unique goverment id  proof named:adhar card
+6.there should be one admin who can only maintain the table of candidate and cant able to vote at all
+7.user can change ther password
+8.user can login only with adhar card number and password
+9.admin cant vote
+
+
+//routes
+
+
+
+user authentication:
+/sigin:post -create a new user account
+
+/login: post -login into an existing account .[adhar card number +password]
+
+
+Voting:
+/candidates :GET -get the list of candidates.
+/vote/:candidateId: Post -vote for spesific candidates
+
+
+
+user profile:
+/profile: GET -get user profile info
+/profile/password :put -change the password
+
+admin candidate mangment:
+
+/candidate :Post -create new candidate
+/candidate/:candidateId :PUT -update an existing candidate
+/candidate/:candidateId :DELETE -delete candidate from the list
